@@ -1,0 +1,326 @@
+body {
+    text-align:center;
+    margin: 0;
+    padding: 0;
+    background-image: url('image/background\ sandy.jpeg'); /* Set the path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 0 0;
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #333;
+    text-align: center;
+}
+nav li {
+    display: inline;
+    /* Display navigation items inline to create a horizontal bar */
+    margin: 20px;
+    text-align: scale(2);
+}
+
+nav a {
+    text-decoration: none;
+    color: #14be22;
+    display: inline-block;
+    padding: 10px 20px;
+    /* Adjust padding to create spacing between navigation items */
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #cbceda;
+}
+
+.enlargeable {
+    width: 100px;
+    /* Initial width matches the container size */
+    height: 100px;
+    /* Initial height matches the container size */
+    transition: transform 0.2s;
+    /* Add a smooth transition effect */
+    cursor: pointer;
+}
+
+.enlargeable:hover {
+    transform: scale(2);
+    /* Enlarge the image on hover */
+}
+
+.enlargeable:active {
+    transform: scale(2);
+    /* Keep the image enlarged when clicked */
+}
+.discount-image {
+    width: 100%;
+    height: auto;
+}
+
+.welcome-section {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin-top:10%;
+margin-left:5%;
+}
+
+/* Add a background to the introduction section */
+.introduction {
+    margin-bottom: 10%;
+}
+.image-container1 {
+    display: flex;
+    justify-content: flex-start;
+    height: 100px;
+    width: 100px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.image-container-right {
+    float: right;
+    width:100px;
+    height:auto;
+    margin-left: 40px;
+}
+
+.introduction {
+    display: flex;    /* Use flexbox to create a flexible layout */
+    background-image: url('C:/Users/crjn0/OneDrive - Lambton College/1103-Front End Web Development (Avatar Singh)/Gro/image/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.introduction-text p {
+    font-size: 19px;
+    font-family: 'Lucida Sans';
+    text-align: justify;
+    margin-left: 10px;
+
+
+
+
+}
+.image-container-right {
+    flex: 1;
+    width: 100px; /* Adjust the width as per your requirement */
+    height: auto;
+    margin-left: 40px;
+}
+
+.image-container-right img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.advertise-text {
+   background-color: #fff;
+    margin-bottom: 10px;
+    padding: 20px;
+    /* Add the following styles to center the images */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-row {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to the next line on smaller screens */
+    gap: 20px; /* Adjust the gap between images */
+}
+
+.image-container {
+    color: whitesmoke;
+    background-color: #ffffff;
+    border: solid black;
+    padding: 0.1%;
+    text-align: center;
+    border-radius: 4px;
+    margin: 3px;
+    flex: 1; /* Make the image container flexible to occupy available space */
+}
+
+.image-container img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Add border-radius to the image */
+}
+
+.image-caption {
+    background-color: black;
+    text-align: center;
+    padding: 14px;
+    font-size: 18px; /* Adjust font size */
+    margin: 5px;
+    color:#cbceda;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.social-icons {
+    display:inline-block; 
+    align-items: right;
+    margin-right: 10px;
+}
+
+.social-icons a img {
+    width: 20px; /* Set the desired width for the logo */
+    height: 20px; /* Set the desired height for the logo */
+    margin-right: 10px; /* Adjust the space between the logo and the name */
+}
+
+ .useful-links {
+     margin-top: 10px;
+ }
+
+    .useful-links ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .useful-links li {
+        margin: 0 10px;
+    }
+
+   .main-info,
+.family-info,
+.commitments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    max-width: 800px; /* Set a max width for better readability */
+    margin: 0 auto; /* Center the content */
+}
+
+/* Style adjustments for the commitments list */
+.commitments ul {
+    list-style-type: disc;
+    padding: 0;
+    text-align: left;
+}
+
+.commitments ul li {
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 8px 12px;
+        display: block;
+    }
+
+    .image-container1 {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .image-container-right {
+        margin-left: 0;
+    }
+
+    .introduction {
+        margin-left: 2%;
+    }
+
+    .welcome-section {
+        margin-top: 5%;
+    }
+
+    .image-row {
+        gap: 10px;
+    }
+
+    .image-container {
+        flex: 1 0 100%;
+        margin: 5px;
+    }
+
+    .image-caption {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icons {
+        margin-bottom: 10px;
+    }
+
+    .social-icons a img {
+        margin-right: 5px;
+    }
+
+    .useful-links {
+        margin-top: 10px;
+    }
+
+    .useful-links ul {
+        justify-content: center;
+    }
+
+    .useful-links li {
+        margin: 0 5px;
+    }
+
+    .useful-links a {
+        padding: 8px 10px;
+    }
+}

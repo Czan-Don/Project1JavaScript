@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Discount & Ticket Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+
+
+        .datetime {
+            display: flex;
+            justify-content: space-between;
+            align-items: left;
+            padding: 20px;
+            margin-top: 10px;
+            margin-bottom: auto;
+            margin-right: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .datetime h2 {
+            color: #7445a0;
+        }
+
+        .datetime p {
+            font-size: 15px;
+            margin: 5px 0;
+        }
+
+        .datetime img {
+            max-width: 80%;
+            height: auto;
+            margin-top: 20px;
+        }
+        .discount-criteria {
+            padding: 20px;
+            margin: 20px;
+            text-align: left;
+        }
+
+        .discount-criteria h2 {
+            color: #7445a0;
+        }
+
+        .discount-criteria p {
+            font-size: 18px;
+            color: yellowgreen;
+            margin-bottom: 10px;
+        }
+
+        .discount-criteria ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-align: left;
+        }
+
+        .discount-criteria li {
+            font-size: 16px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .discount-criteria li::before {
+            content: '\2022'; /* Use the bullet character as a list item marker */
+            color: gold;
+            font-size:24px;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+        }
+
+        .discount-criteria li {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto; /* Center the table */
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            height: 50px;
+            background-color: #c63939;
+            color: white;
+        }
+
+        tr {
+            background-color: rgb(168, 154, 182);
+        }
+
+        tr:nth-child(even) {
+            background-color: aqua;
+        }
+
+        tr:hover {
+            background-color: whitesmoke;
+        }
+
+        td {
+            height: 20px;
+            vertical-align: bottom;
+        }
+        .buy-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .buy-button:hover {
+            background-color: #7445a0;
+        }
+
+        .buy-form {
+            text-align: center;
+        }
+        .buy-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .buy-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        .buy-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .buy-form button:hover {
+            background-color: #45a049;
+        }
+        .buy-form-container:target {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="image-container1">
+        <img src="Image/Zoo Logo.png" alt="Image" class="enlargeable">
+    </div>
+    <div class="title">
+        <h1> OFFER & DISCOUNTS </h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="animals .html">Animals</a></li>
+            <li><a href="about_us.html">About US</a></li>
+            <li><a href="ticket_offers.html">Discounts & Tickets</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="datetime" id="datetime-section">
+    <div class="date-time-info">
+        <h2>Date and Time</h2>
+        <br><br>
+        <p>Zoo Opens : Monday to Sunday</p><br>
+        <p>Opening Time: 9:00 AM - 6:00 PM</p>
+    </div>
+    <img src="image/discount_image.jpg" alt="img">
+    
+</div>
+
+<div class="discount-criteria" id="discount-criteria-section">
+    <h2>Special Discounts</h2>
+    <p>Explore our special discounts for different categories:</p>
+    <ul>
+        <li>Elder Citizens (60+): 20% off</li>
+        <li>Students: 15% off with valid student ID</li>
+        <li>Zoo Members: 25% off</li>
+    </ul>
+</div>
+
+
+<div class="Table" id="Table-section">
+    <h2>We are mostly focused on attracting visitors to our zoo. Not only economy<br>
+         and entertainment, we provide knowledgeable experiences about wildlife<br>
+         and their conservation. Motivate the general public to conserve our nature.</h2>
+    <table>
+        <caption style="color: blue; font-size: 20px;">Hurry Up!! Buy Tickets Now !!!</caption>
+        <tr>
+            <th>Ticket Type</th>
+            <th>Price</th>
+            <th>Buy Now</th>
+        </tr>
+        <tbody>
+            <tr>
+                <td>Adult (12+)</td>
+                <td>$20.00</td>
+                <td>
+                    <details class="buy-form-container">
+                        <summary>
+                            <button class="buy-button">Go</button>
+                        </summary>
+                        <form class="buy-form">
+                            <!-- Your form fields go here -->
+                            <label for="fullName">Full Name:</label>
+                            <input type="text" id="fullName" name="fullName" required>
+
+                            <label for="location">Location:</label>
+                            <input type="text" id="location" name="location" required>
+
+                            <label for="visitDate">Visiting Date:</label>
+                            <input type="date" id="visitDate" name="visitDate" required>
+
+                            <label for="paymentMethod">Payment Method:</label>
+                            <select id="paymentMethod" name="paymentMethod" required>
+                                <option value="debit">Debit Card</option>
+                                <option value="credit">Credit Card</option>
+                            </select>
+
+                            <button type="submit" class="buy-button">Buy</button>
+                        </form>
+                    </details>
+                </td>
+            </tr>
+            <tr>
+                <td>Child (5-11)</td>
+                <td>$10.00</td>
+                <td>
+                    <details class="buy-form-container">
+                        <summary>
+                            <button class="buy-button">Go</button>
+                        </summary>
+                        <form class="buy-form">
+                            <!-- Your form fields go here -->
+                            <label for="fullName">Full Name:</label>
+                            <input type="text" id="fullName" name="fullName" required>
+
+                            <label for="location">Location:</label>
+                            <input type="text" id="location" name="location" required>
+
+                            <label for="visitDate">Visiting Date:</label>
+                            <input type="date" id="visitDate" name="visitDate" required>
+
+                            <label for="paymentMethod">Payment Method:</label>
+                            <select id="paymentMethod" name="paymentMethod" required>
+                                <option value="debit">Debit Card</option>
+                                <option value="credit">Credit Card</option>
+                            </select>
+
+                            <button type="submit" class="buy-button">Buy</button>
+                        </form>
+                    </details>
+                </td>
+            </tr>
+            <tr>
+                <td>Infant (Under 5)</td>
+                <td>Free</td>
+                <td>
+                    <details class="buy-form-container">
+                        <summary>
+                            <button class="buy-button">Go</button>
+                        </summary>
+                        <form class="buy-form">
+                            <!-- Your form fields go here -->
+                            <label for="fullName">Full Name:</label>
+                            <input type="text" id="fullName" name="fullName" required>
+
+                            <label for="location">Location:</label>
+                            <input type="text" id="location" name="location" required>
+
+                            <label for="visitDate">Visiting Date:</label>
+                            <input type="date" id="visitDate" name="visitDate" required>
+
+                            <label for="paymentMethod">Payment Method:</label>
+                            <select id="paymentMethod" name="paymentMethod" required>
+                                <option value="debit">Debit Card</option>
+                                <option value="credit">Credit Card</option>
+                            </select>
+
+                            <button type="submit" class="buy-button">Buy</button>
+                        </form>
+                    </details>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<footer>
+    <p>&copy; 2023 Your Company</p>
+</footer>
+
+</body>
+</html>

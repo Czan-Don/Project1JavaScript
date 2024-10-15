@@ -1,0 +1,78 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+/* Basic styles for the header */
+header {
+    background-color: #333;
+    color: #ecd2d2;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #333;
+    text-align: center;
+}
+.image-container {
+    display: flex;
+    justify-content: flex-start;
+    height: 100px;
+    width: 100px;
+    margin-left: 50px;
+    margin-top: 10px /* Adjust the amount of margin to move the image to the right */
+}
+.enlargeable {
+    width: 100px; /* Initial width matches the container size */
+    height: 100px; /* Initial height matches the container size */
+    transition: transform 0.2s; /* Add a smooth transition effect */
+    cursor: pointer;
+}
+
+.enlargeable:hover {
+    transform: scale(2); /* Enlarge the image on hover */
+}
+
+.enlargeable:active {
+    transform: scale(2); /* Keep the image enlarged when clicked */
+}
+
+
+nav li {
+    display: inline; /* Display navigation items inline to create a horizontal bar */
+    margin: 20px;
+    text-align: scale(2);
+}
+
+nav a {
+    text-decoration: none;
+    color: #14be22;
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding to create spacing between navigation items */
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #cbceda;
+}
+/* Style for the green h2 heading */
+.main-info h2 {
+    color: green;
+}
+
+/* Style for the white font with light green background text */
+.main-info {
+    background-color: lightgreen;
+    color: white;
+    padding: 20px; /* Add padding for spacing */
+}
